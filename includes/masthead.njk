@@ -1,19 +1,19 @@
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
 <div class="x-govuk-masthead x-govuk-masthead--large">
   <div class="govuk-width-container">
-    
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-half-from-desktop">
-        <h1 class="x-govuk-masthead__title">
-          A better way to submit CORE logs
-        </h1>
+        <h1 class="x-govuk-masthead__title">A better way to submit CORE logs</h1>
         <p class="x-govuk-masthead__description">
           Apply for early access to new CORE and help us shape the service around your&nbsp;needs.
         </p>
-        <a href="/" role="button" draggable="false" class="govuk-button x-govuk-button--inverse govuk-button--start" data-module="govuk-button">
-  Apply now
-  <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
-    <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
-  </svg></a>
+        {{ govukButton({
+          classes: "x-govuk-button--inverse",
+          text: "Apply now",
+          href: "#",
+          isStartButton: true
+        }) }}
       </div>
       <div class="govuk-grid-column-one-half-from-desktop">
         <div class="x-govuk-masthead__image">
