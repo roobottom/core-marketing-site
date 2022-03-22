@@ -9,14 +9,18 @@ image:
   src: /assets/images/hero.png
   alt: A laptop displaying the homepage for Submit social housing lettings and sales data
 ---
-{% extends 'node_modules/govuk-eleventy-plugin/layouts/product.njk' %}
+{% extends 'node_modules/govuk-eleventy-plugin/layouts/base.njk' %}
 
 {% block head %}
 {{ super() }}
 <link rel="stylesheet" href="/assets/custom-styles.css">
 {% endblock %}
 
-{% block content %}
+{% block main %}
+{% include "masthead.njk" %}
+
+<div class="govuk-width-container">
+<main class="govuk-main-wrapper" id="main-content" role="main">
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 {% markdown %}
@@ -108,5 +112,6 @@ Our team has been hard at work developing new CORE. You can help us make it even
 {% endmarkdown %}
   </div>
 </div>
+</main>
+</div>
 {% endblock %}
-
