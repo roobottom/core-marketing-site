@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
   // Register the plugin
   eleventyConfig.addPlugin(govukEleventyPlugin, {
     brandColour: '#012169',
+    stylesheets: ['custom-styles.css'],
     header: {
       organisationName: 'DLUHC',
       organisationLogo: 'royal-arms',

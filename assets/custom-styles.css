@@ -1,0 +1,19 @@
+.custom-rule {
+  border: none;
+  height: 6px;
+  width: 100%;
+  display: block;
+  background-color: #012169;
+}
+.custom-figure {
+  display: flex;
+  justify-content: center;
+}
+.custom-figure > img {
+  display: block;
+  max-width: 386px;
+}
+
+.custom-quote {
+  color: #012169;
+}

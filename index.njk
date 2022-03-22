@@ -1,5 +1,4 @@
 ---
-layout: product
 homepage: true
 title: A better way to submit CORE logs
 description: Apply for early access to new CORE and help us shape the service around your needs.
@@ -10,6 +9,14 @@ image:
   src: /assets/images/hero.png
   alt: A laptop displaying the homepage for Submit social housing lettings and sales data
 ---
+{% extends 'node_modules/govuk-eleventy-plugin/layouts/product.njk' %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="/assets/custom-styles.css">
+{% endblock %}
+
+{% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 {% markdown %}
@@ -20,4 +27,86 @@ New CORE is ready to accept your data for 2021/22. Here are a few of the reasons
 {% endmarkdown %}
   </div>
 </div>
+
+<hr class="custom-rule govuk-!-margin-top-5 govuk-!-margin-bottom-9">
+
+<div class="govuk-grid-row govuk-!-margin-bottom-9">
+  <div class="govuk-grid-column-one-half-from-desktop">
+{% markdown %}
+## A service for everybody
+Our new service is accessible to all - however you use it - whether that’s on paper, mobile, tablet or using a screen reader and other assistive technology.
+
+You told us the questions are complicated and difficult to understand. By splitting the form into logical sections and using one question per page, we’ve made the content clear and easy to digest.
+{% endmarkdown %}  
+  </div>
+  <div class="govuk-grid-column-one-half-from-desktop">
+    <figure class="custom-figure">
+      <img src="/assets/images/how-many-people.png" alt="A web browser and a mobile phone display a question asking 'how many people live in the household for this letting?'">
+    </figure>
+  </div>
+</div>
+
+<div class="govuk-grid-row govuk-!-margin-bottom-9">
+  <div class="govuk-grid-column-one-half-from-desktop">
+{% markdown %}
+## You spoke, we listened
+We’ve taken some of your biggest pain points from current CORE and created solutions to make submitting data simpler. 
+
+For example, you told us that current CORE often rejects postcodes. Now, we accept any postcode, even ones for new build properties.
+
+This is just one of many small improvements we’ve made directly from your feedback.
+{% endmarkdown %}  
+  </div>
+  <div class="govuk-grid-column-one-half-from-desktop">
+    <figure class="custom-figure">
+      <img src="/assets/images/property-postcode.png" alt="A web browser displaying the question 'Do you know the property’s postcode?'">
+    </figure>
+  </div>
+</div>
+
+<div class="govuk-grid-row govuk-!-margin-bottom-9">
+  <div class="govuk-grid-column-one-half-from-desktop">
+{% markdown %}
+## We’re enabling new workflows
+It’s not just the CORE website we’ve redesigned; the paper form is all new. Of course, the new paper form exactly mirrors the CORE website, so rekeying your data is easy.
+
+What’s more, we’ve now split the form by section - so you  only need to take the questions you want to ask tenants on visits. Really useful when you can part-fill the log using data from your HMS.
+
+Or, if you prefer, leave paper behind and fill CORE from anywhere on your mobile device or tablet.
+{% endmarkdown %}  
+  </div>
+  <div class="govuk-grid-column-one-half-from-desktop">
+    <figure class="custom-figure">
+      <img src="/assets/images/paper-form-and-mobile.png" alt="A paper form and mobile phone">
+    </figure>
+  </div>
+</div>
+
+<hr class="custom-rule govuk-!-margin-bottom-9">
+
+<div class="govuk-grid-row govuk-!-margin-bottom-9">
+  <div class="govuk-grid-column-one-third">
+{% markdown %}
+## What users say
+{% endmarkdown %}
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+    <blockquote>
+      <p class="govuk-body-l custom-quote">“We are very happy to be part of this push towards a brighter future for CORE logs. It lifts our burdens and has become a delightful part of our week. We love doing CORE now!”</p>
+      <p class="govuk-body-s">Someone made up</p>
+    </blockquote>
+  </div>
+</div>
+
+<hr class="custom-rule govuk-!-margin-bottom-9">
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+{% markdown %}
+## Apply now
+Our team has been hard at work developing new CORE. You can help us make it even better by [applying to be part of our private beta](#).
+{% endmarkdown %}
+  </div>
+</div>
+{% endblock %}
 
