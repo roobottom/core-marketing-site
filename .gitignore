@@ -1,0 +1,4 @@
+.DS_Store
+/node_modules
+/govuk-eleventy-plugin
+_site

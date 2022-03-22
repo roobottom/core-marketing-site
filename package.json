@@ -1,0 +1,16 @@
+{
+  "name": "core-product-site",
+  "version": "1.0.0",
+  "description": "A website to communicate the value of the new DLUHC CORE service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "govuk-eleventy-plugin": "^2.0.0-beta",
+    "markdown-it": "^12.3.2"
+  }
+}
