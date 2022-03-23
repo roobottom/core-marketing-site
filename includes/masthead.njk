@@ -4,14 +4,12 @@
   <div class="govuk-width-container">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-half-from-desktop">
-        <h1 class="x-govuk-masthead__title">A better way to submit CORE logs</h1>
-        <p class="x-govuk-masthead__description">
-          Apply for early access to new CORE and help us shape the service around your&nbsp;needs.
-        </p>
+        <h1 class="x-govuk-masthead__title">{{ title }}</h1>
+        <p class="x-govuk-masthead__description">{{ description }}</p>
         {{ govukButton({
           classes: "x-govuk-button--inverse",
-          text: "Apply now",
-          href: "#",
+          text: startButton.text,
+          href: startButton.href,
           isStartButton: true
         }) }}
       </div>
