@@ -1,11 +1,10 @@
 const govukEleventyPlugin = require('govuk-eleventy-plugin')
-const md = require('./node_modules/govuk-eleventy-plugin/lib/markdown-it.js')
 
 module.exports = function (eleventyConfig) {
   // Register the plugin
   eleventyConfig.addPlugin(govukEleventyPlugin, {
     brandColour: '#012169',
-    stylesheets: ['custom-styles.css'],
+    stylesheets: ['/assets/custom-styles.css'],
     header: {
       organisationName: 'DLUHC',
       organisationLogo: 'royal-arms',
@@ -14,11 +13,6 @@ module.exports = function (eleventyConfig) {
   })
 
   eleventyConfig.addPassthroughCopy("assets")
-
-  //render markdown in blocks
-  eleventyConfig.addPairedShortcode("markdown", function (content) { 
-    return md.render(content)
-  })
 
   return {
     dataTemplateEngine: 'njk',

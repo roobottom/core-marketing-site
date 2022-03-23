@@ -6,12 +6,11 @@
   background-color: #012169;
 }
 .custom-figure {
-  display: flex;
-  justify-content: center;
+  
 }
 .custom-figure > img {
   display: block;
-  max-width: 386px;
+  max-width: 100%;
 }
 
 .custom-quote {

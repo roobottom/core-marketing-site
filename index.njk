@@ -1,7 +1,7 @@
 ---
 homepage: true
 title: A better way to submit CORE logs
-description: Sign up for early access to new CORE - and help us shape the service around your needs.
+description: Sign up for early access to new CORE and help us shape the service around your needs.
 startButton: 
   text: Sign up now
   href: /
@@ -11,11 +11,6 @@ image:
 ---
 {% extends 'node_modules/govuk-eleventy-plugin/layouts/base.njk' %}
 
-{% block head %}
-{{ super() }}
-<link rel="stylesheet" href="/assets/custom-styles.css">
-{% endblock %}
-
 {% block main %}
 {% include "masthead.njk" %}
 
@@ -23,14 +18,14 @@ image:
 <main class="govuk-main-wrapper" id="main-content" role="main">
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-half-from-desktop">
-{% markdown %}
+{% filter markdown %}
 ## Introducing new CORE
 We’re creating a better way for you to submit CORE data: faster, simpler and built from the ground up with the user at the centre. We’re now looking for forward-looking organisations to help perfect our new service.
 
 New CORE is ready to accept your data for 2021/22, and you can get early access before everybody else.
 
 Have you been put off the idea of submitting CORE logs in the past? Want to find out how the new service could help you? Here are a few reasons why you might want to start using new CORE today.
-{% endmarkdown %}
+{% endfilter %}
   </div>
 </div>
 
@@ -38,12 +33,12 @@ Have you been put off the idea of submitting CORE logs in the past? Want to find
 
 <div class="govuk-grid-row govuk-!-margin-bottom-9">
   <div class="govuk-grid-column-one-half-from-desktop">
-{% markdown %}
+{% filter markdown %}
 ## A service for everybody
 However you use new CORE, it’s accessible to everybody: whether that’s on paper, mobile, tablet or using a screen reader or other technology.
 
 You told us the questions are complicated and difficult to understand. By breaking the form up into logical sections with only one question on every page, we’ve made the content clear and easier to digest.
-{% endmarkdown %}  
+{% endfilter %}  
   </div>
   <div class="govuk-grid-column-one-half-from-desktop">
     <figure class="custom-figure">
@@ -54,14 +49,14 @@ You told us the questions are complicated and difficult to understand. By breaki
 
 <div class="govuk-grid-row govuk-!-margin-bottom-9">
   <div class="govuk-grid-column-one-half-from-desktop">
-{% markdown %}
+{% filter markdown %}
 ## You spoke, we listened
 Do you find current CORE confusing and tricky to use? Or heard bad things and always avoided it? We’ve taken some of your biggest pain points and created solutions to make submitting data simpler.
 
 For example, you told us that current CORE often rejects postcodes. Now we accept all postcodes, even for new-build properties - so you can complete your logs faster.
 
 We’ve also made sure the rent ranges reflect real-life examples, and made it easier for you to spot any mistakes. This means you can submit accurate data first time, with less help from us.
-{% endmarkdown %}  
+{% endfilter %}  
   </div>
   <div class="govuk-grid-column-one-half-from-desktop">
     <figure class="custom-figure">
@@ -72,14 +67,14 @@ We’ve also made sure the rent ranges reflect real-life examples, and made it e
 
 <div class="govuk-grid-row govuk-!-margin-bottom-9">
   <div class="govuk-grid-column-one-half-from-desktop">
-{% markdown %}
+{% filter markdown %}
 ## We’re supporting the ways you work
 It’s not just the CORE website we’ve redesigned. Filling in a log on paper is easier now too. 
 
 We’ve split the form up into handy sections, so you can print the parts you need when interviewing tenants. Or save even more time and part-fill your logs using data from your housing management system.
 
 And if you or your organisation prefer to go paperless, fill CORE in anytime, anywhere on your mobile or tablet.
-{% endmarkdown %}  
+{% endfilter %}  
   </div>
   <div class="govuk-grid-column-one-half-from-desktop">
     <figure class="custom-figure">
@@ -92,9 +87,9 @@ And if you or your organisation prefer to go paperless, fill CORE in anytime, an
 
 <div class="govuk-grid-row govuk-!-margin-bottom-9">
   <div class="govuk-grid-column-one-third">
-{% markdown %}
+{% filter markdown %}
 ## Don’t just take our word for it
-{% endmarkdown %}
+{% endfilter %}
   </div>
   <div class="govuk-grid-column-two-thirds">
     <blockquote>
@@ -108,10 +103,10 @@ And if you or your organisation prefer to go paperless, fill CORE in anytime, an
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-{% markdown %}
+{% filter markdown %}
 ## Sign up now
 Our team has been hard at work redesigning CORE. You can help us make it even better. [Sign up to take part in our private beta](#) and start using the new service.
-{% endmarkdown %}
+{% endfilter %}
   </div>
 </div>
 </main>
