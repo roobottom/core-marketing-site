@@ -15,4 +15,5 @@
 
 .custom-quote {
   color: #012169;
+  hanging-punctuation: first;
 }
